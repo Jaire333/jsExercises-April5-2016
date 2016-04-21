@@ -52,21 +52,17 @@ else {
     isHotAdv(33) => "just right"
     isHotAdv(32) => "cold"
 */
-  
-  function isHotAdv(degrees) {
-  if (degrees > 72) {
-    return "hot";
-  }
-  if(degrees > 32 && degrees <= 72){
-    return "just right";
-  }
+ function isHotAdv(degrees) {
+   if (degrees > 72) {
+   return "hot";
+ }
+   else if (degrees > 32 && degrees <= 72) {
+     return "just right";
+   }
   else {
-    return "cold";
+        return "cold";
   }
 }
-  
-
-
 /*
   Check if degrees is hot using isHotAdv() store it into a variable
   Then return a string indcating if it is hot, just right or cold today including degrees
@@ -76,10 +72,16 @@ else {
     sayHotMessageAdv(33) => "It is just right today at 33 degrees"
     sayHotMessageAdv(32) => "It is cold today at 32 degrees"
 */
-function isHotAdv(degrees) {
-if( )
-
-
-
-
+function sayHotMessageAdv(degrees) {
+  isHotAdv(degrees);
+     if (degrees > 72) {
+   return "It is hot today at " + degrees+" degrees";
+ }
+   else if (degrees > 32 && degrees <= 72) {
+     return "It is just right today at " + degrees+" degrees";
+   }
+  else {
+       return "It is cold today at " + degrees+" degrees";
+  }
+ 
 }
